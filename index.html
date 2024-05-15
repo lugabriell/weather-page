@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/src/styles/fonts.css">
+</head>
+<body>
+    <script src="/src/scripts/script.js" defer></script>
+    <div id="container">
+        <form action="" id="search">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <input type="search" name="cidade_nome" id="cidade_nome" placeholder="Buscar cidade">
+            <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    <div id="clima">
+            <h1 id="title">Goiânia, BR</h1>
+            <div id="infos">
+                <div id="temp">
+                    
+                    <div>
+                        <p id="temp_valor">
+                            32 
+                        </p>
+                        <p id="temp_descrisao"> Ensolarado</p>
+                    </div>
+                </div>
+
+            </div>
+        
+        <div id="outras_infos">
+            <div class="info">
+                <i class="fa-solid fa-temperature-high" id="max_temp_icon"></i>
+                <div>
+                    <h2>Temperatura máxima</h2>
+                    <p id="temp_maximo">33 </p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-temperature-low" id="min_temp_icon"></i>
+                <div>
+                    <h2>Temperatura mínima</h2>
+                    <p id="temp_minimo">13 </p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-droplet" id="droplet_icon"></i>
+                <div>
+                    <h2>Umidade</h2>
+                    <p id="umidade">45 <sup>%</sup></p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-fan" id="fan_icon"></i>
+                <div>
+                    <h2>Vento</h2>
+                    <p id="vento">45 km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="alerta"></div>
+    </div>
+</body>
+</html>
